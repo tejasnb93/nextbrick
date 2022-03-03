@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<base href="https://www.nextbrick.com/">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>What are Apache Solr and its advantages? - Nextbrick, Inc</title>
+	<!-- This site is optimized with the Yoast SEO plugin v13.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description"
+		content="Apache Solr can be defined as a code layer which covers Lucene and that transforms the same into a search platform used for the creation of search applications. Apache Solr features several capabilities which can spin the core search-capability and then turn the same into Full-fledged search applications. It offers users the chance to makeRead More">
+	<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://www.nextbrick.com/blog/what-are-apache-solr-and-its-advantages" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="What are Apache Solr and its advantages? - Nextbrick, Inc" />
+	<meta property="og:description"
+		content="Apache Solr can be defined as a code layer which covers Lucene and that transforms the same into a search platform used for the creation of search applications. Apache Solr features several capabilities which can spin the core search-capability and then turn the same into Full-fledged search applications. It offers users the chance to makeRead More" />
+	<meta property="og:url" content="https://www.nextbrick.com/blog/what-are-apache-solr-and-its-advantages" />
+	<meta property="og:site_name" content="Nextbrick, Inc" />
+	<meta property="og:image" content="./assets/img/cvs-pharmacy-logo.png" />
+	<meta property="og:image:secure_url" content="./assets/img/cvs-pharmacy-logo.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:description"
+		content="Apache Solr can be defined as a code layer which covers Lucene and that transforms the same into a search platform used for the creation of search applications. Apache Solr features several capabilities which can spin the core search-capability and then turn the same into Full-fledged search applications. It offers users the chance to makeRead More" />
+	<meta name="twitter:title" content="What are Apache Solr and its advantages? - Nextbrick, Inc" />
+	<meta name="twitter:image" content="./assets/img/cvs-pharmacy-logo.png" />
+
+	<!-- / Yoast SEO plugin. -->
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+	<link rel="stylesheet" href="./assets/css/aos.css">
+	<link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134752872-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-134752872-1');
+		gtag('config', 'AW-762133543');
+	</script>
+	<link rel="icon" type="image/png" href="./favicon.png" />
+</head>
+
+<body>
+	<!-- Header Starts -->
+	<header class="header">
+		<nav class="navbar navbar-expand-lg fixed-top pt-3 pb-3 navbar-light">
+			<div class="container-fluid">
+				<div class="col-md-3 p-0">
+					<a class="navbar-brand py-0" href="./">
+						<img class="white" src="./assets/img/logo.svg" alt="Nextbrick logo">
+						<img class="black" src="./assets/img/logo.svg" alt="Nextbrick    logo">
+					</a>
+				</div>
+				<div class="menu-btn" data-toggle="collapse" data-target="#navbarCollapse">
+					<div class="menu-btn__burger"></div>
+				</div>
+				<div class="col-md-9 pr-0 justify-content-end contact-row">
+					<div class="col-md-12 p-0 collapse navbar-collapse navContent tabs" id="navbarCollapse">
+						<div class="d-flex navigation align-items-center justify-content-end">
+							<div class="col navList navbar-collapse" id="navbar">
+								<ul id="autoNav" class="navbar-nav ml-auto nav justify-content-end -primary ">
+									<li class="nav-item"><a class="nav-link" href="./">Home</a></li>
+									<li class="nav-item hasMenu dropdown megamenu-li"><a class="nav-link dropdown-toggle" id="aboutMenu"
+											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">About</a>
+
+										<div class="dropdown-menu megamenu smallNav" aria-labelledby="aboutMenu">
+											<div class="row">
+												<div class="col-sm-12 col-lg-12">
+													<a class="dropdown-item" href="value-proposition">Value
+														Proposition</a>
+													<a class="dropdown-item" href="leadership">Leadership</a>
+													<a class="dropdown-item" href="quality">Quality</a>
+													<a class="dropdown-item" href="press">Press</a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="nav-item hasMenu dropdown megamenu-li megamenu-dropdown"><a
+											class="nav-link dropdown-toggle" id="servicesMenu" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false" href="#">Services</a>
+										<div class="dropdown-menu megamenu col-lg-12" aria-labelledby="servicesMenu">
+											<div class="row">
+												<div class="col-sm-2 col-lg-2">
+													<a class="dropdown-item" href="search">
+														<h4>Search</h4>
+													</a>
+													<a class="dropdown-item" href="solr">Solr</a>
+													<a class="dropdown-item" href="elastic-search">Elastic Search</a>
+													<a class="dropdown-item" href="lucidworks-fusion">Lucidworks
+														Fusion</a>
+													<a class="dropdown-item" href="algolia">Algolia</a>
+													<a class="dropdown-item" href="sinequa">Sinequa</a>
+													<a class="dropdown-item" href="coveo">Coveo</a>
+													<a class="dropdown-item" href="microfocus-idol">Microfocus Idol</a>
+												</div>
+												<div class="col-sm-3 col-lg-3">
+													<a class="dropdown-item" href="content-management">
+														<h4>Content Management</h4>
+													</a>
+													<a class="dropdown-item" href="salesforce-community-cloud-consulting">Salesforce
+														community cloud</a>
+													<a class="dropdown-item" href="adobe-experience-manager">Adobe
+														Experience Manager</a>
+													<a class="dropdown-item" href="sitecore">Sitecore</a>
+													<a class="dropdown-item" href="opentext">Opentext</a>
+													<a class="dropdown-item" href="drupal">Drupal</a>
+												</div>
+												<div class="col-sm-2 col-lg-2">
+													<a class="dropdown-item" href="data-engineering">
+														<h4>Data Engineering</h4>
+													</a>
+													<a class="dropdown-item" href="database">Database</a>
+													<a class="dropdown-item" href="kafka">Kafka</a>
+													<a class="dropdown-item" href="spark">Spark</a>
+													<a class="dropdown-item" href="cloud">Cloud</a>
+													<a class="dropdown-item" href="data-science">Data Science/AI</a>
+												</div>
+												<div class="col-sm-2 col-lg-3">
+													<a class="dropdown-item" href="software-product-development">
+														<h4>Software Product Development</h4>
+													</a>
+
+												</div>
+												<div class="col-sm-2 col-lg-2">
+													<a class="dropdown-item" href="emerging-technologies">
+														<h4>Emerging Technologies</h4>
+													</a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="nav-item"><a class="nav-link" href="customers">Customers</a></li>
+									<li class="nav-item"><a class="nav-link" href="partners">Partners</a></li>
+									<li class="nav-item"><a class="nav-link" href="blog/">Blog</a></li>
+
+								</ul>
+							</div>
+							<div class="col">
+								<div class="d-flex align-items-center justify-content-end">
+									<a class="contactUs" href="contact-us">
+										Contact Us
+									</a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+	</header>
+	<!-- Header End -->
+
+	<!-- Hero Section Start -->
+	<section class="heroSection hero section" id="homeSlider">
+		<div class="slider-wrapper">
+			<div class="slider inner-page">
+				<div class="slides-container">
+					<div class="slide-wrapper">
+						<div class="slide" data-order="1">
+							<img src="./assets/img/sliderImg/slide1.jpg" alt="What are Apache Solr and its advantages?" />
+							<div class="slide-content">
+								<div class="container">
+									<div class="col-lg-7 pr-0">
+										<h1>Better Term Centric Scoring In Elasticsearch</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero Section End -->
+	<section class="es-solution service-content bg-white">
+		<div class="container">
+			<div class="card border-0 horizontal-card">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<img class="card-img" src="assets/img/Rplot-1.png"
+							alt="10 Reasons to Replace Endeca to Deliver an Enhanced Ecommerce Search Experience">
+						<div class="card-body">
+							<small>September 27, 2021</small>
+							<h5 class="card-title">10 Reasons to Replace Endeca to Deliver an Enhanced Ecommerce Search
+								Experience</h5>
+							<p class="card-text">
+								Elasticsearch version 7.13 introduced a new query combined_fields that brings better
+								term-centric scoring to relevance engineers. Under the hood it uses the new Lucene
+								query, CombinedFieldsQuery, (formally known as the BM25FQuery) which implements BM25F, a
+								widely accepted extension of BM25 for multi-field search with weighting. Before 7.13,
+								the multi_match query with "type": "cross_fields" (which for the remainder of this post
+								will be referenced as cross_fields) was the best option in Elasticsearch. This post
+								discusses term-centric versus field-scoring scoring and does a bake off between the
+								scoring of the old (cross_fields) and the new (combined_fields).
+							</p>
+							<h3>Term vs Field-centric is important for scoring</h3>
+							<p class="card-text">
+								Term and field-centric are two alternative strategies for token based scoring for
+								ranking. In term-centric scoring the entire document is treated as one large field. This
+								means putting less importance on the sections within the document, the goal being better
+								matching when tokens are spread out or repeated across multiple sections.<br><br>
+
+								In field-centric scoring the original sections are scored independently, each section in
+								its own index with its own term statistics. The goal here is to reflect varying
+								importance of different sections, but can create unevenness as IDF can vary widely
+								between fields.<br><br>
+
+								The behaviour of the commonly used minimum_should_match setting illustrates the
+								difference between each approach. With the setting “minimum_should_match": ”100%” a
+								field-centric query will require all tokens to match within a single field, whereas a
+								term-centric query would be more relaxed, requiring only that all tokens appear in the
+								document – and these tokens could be in different fields.
+							</p>
+							<h3>Old vs New in Elasticsearch (and Lucene)</h3>
+							<p class="card-text">
+								In the old days (before v7.13) there was only one way to do term-centric with field
+								weighting, by querying with multi_match{ ..., "type": “cross_field”} a.k.a.
+								cross_fields. In Lucene the scoring for cross_fields was done by the BlendedTermQuery,
+								which would mix the scores from individual fields based on user supplied field
+								weights.<br><br>As Elasticsearch expert Mark Harwood writes:
+							</p>
+							<blockquote>“Searching for Mark Harwood across firstname and lastname fields should
+								certainly favour any firstname:Mark over a lastname:Mark. Cross-fields was originally
+								created because in these sorts of scenarios IDF would (annoyingly) ensure exactly the
+								wrong field for a term was ranked highest.”</blockquote>
+							<p class="card-text">
+								The cross_fields query would negate IDF for the most part, in order to ensure that
+								scoring was similar across fields. Because this was originally conceived in the context
+								of multi_match there was also a desire to reward the “correct” field. To achieve this,
+								the scoring function would add 1 to the document frequency of the most frequent field.
+								While this worked in practice, the scoring was confusing and not grounded in theory.
+								Let’s consider some example queries:<br><br>
+								<b>cross_fields query</b><br>
+								<code>
+									GET tmdb/_search<br>
+									{<br>
+									"query": {<br>
+									"multi_match": {<br>
+									"query": "green Marvel hero",<br>
+									"fields": [<br>
+									"title^3",<br>
+									"overview^2",<br>
+									"tagline"<br>
+									],<br>
+									"type": "cross_fields"<br>
+									}<br>
+									}<br>
+									}
+								</code><br>
+								<b>combined_fields query</b><br>
+								<code>
+									GET tmdb/_search<br>
+									{<br>
+									"query": {<br>
+									"combined_fields": {<br>
+									"query": "green Marvel hero",<br>
+									"fields": [<br>
+									"title^3",<br>
+									"overview^2",<br>
+									"tagline"<br>
+									]<br>
+									}<br>
+									}<br>
+									}
+								</code><br><br>
+								The syntax for combined_fields is similar but the scoring is different and done by the
+								new Lucene CombinedFieldsQuery which implements BM25F. This is a variant of BM25 that
+								adds that ability to weight individual fields. The field weights act by multiplying the
+								raw term frequency of a field, before individual field statistics are combined into
+								document level statistics. This does two big things: captures relative field importance
+								and establishes a more generalizable formula for ranking than used by the cross_fields
+								query.
+							</p>
+							<h3>An example query</h3>
+							<p class="card-text">
+								Using a version of The Movie Database (TMDB) that we have in this Elasticsearch sandbox
+								on Github I want to show the difference between combined_fields and cross_fields.
+								_explain API<br><br>
+
+								First let’s look at what the explain API tells us about queries for “Captain Marvel” in
+								each case:<br><br>
+								<b>cross_fields</b><br>
+								<details>
+									<summary>Request</summary>
+									<code>GET tmdb/_explain/299537<br>
+										{<br>
+										"query": {<br>
+										"multi_match": {<br>
+										"query": "green Marvel hero",<br>
+										"fields": [<br>
+										"title",<br>
+										"overview",<br>
+										"tagline"<br>
+										],<br>
+										"type": "cross_fields"<br>
+										}<br>
+										}<br>
+										}<br>
+									</code>
+								</details>
+								<details>
+									<summary>Response</summary>
+									<code>{
+										"_index" : "tmdb",<br>
+										"_type" : "_doc",<br>
+										"_id" : "299537",<br>
+										"matched" : true,<br>
+										"explanation" : {<br>
+										"value" : 14.744863,<br>
+										"description" : "sum of:",<br>
+										"details" : [<br>
+										{<br>
+										"value" : 10.636592,<br>
+										"description" : "max of:",<br>
+										"details" : [<br>
+										{<br>
+										"value" : 10.636592,<br>
+										"description" : "weight(overview:marvel in 1190) [PerFieldSimilarity], result
+										of:",<br>
+										"details" : [<br>
+										{<br>
+										"value" : 10.636592,<br>
+										"description" : "score(freq=2.0), computed as boost * idf * tf from:",<br>
+										"details" : [<br>
+										{<br>
+										"value" : 2.2,<br>
+										"description" : "boost",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 7.7968216,<br>
+										"description" : "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",<br>
+										"details" : [<br>
+										{<br>
+										"value" : 3,<br>
+										"description" : "n, number of documents containing term",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 8514,<br>
+										"description" : "N, total number of documents with field",<br>
+										"details" : [ ]<br>
+										}<br>
+										]<br>
+										},<br>
+										{<br>
+										"value" : 0.62010074,<br>
+										"description" : "tf, computed as freq / (freq + k1 * (1 - b + b * dl / avgdl))
+										from:",<br>
+										"details" : [<br>
+										{<br>
+										"value" : 2.0,<br>
+										"description" : "freq, occurrences of term within document",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 1.2,<br>
+										"description" : "k1, term saturation parameter",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 0.75,<br>
+										"description" : "b, length normalization parameter",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 36.0,<br>
+										"description" : "dl, length of field",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 35.016327,<br>
+										"description" : "avgdl, average length of field",<br>
+										"details" : [ ]<br>
+										}<br>
+										]<br>
+										}<br>
+										]<br>
+										}<br>
+										]<br>
+										},<br>
+										{<br>
+										"value" : 7.7574196,<br>
+										"description" : "weight(title:marvel in 1190) [PerFieldSimilarity], result
+										of:",<br>
+										"details" : [<br>
+										{<br>
+										"value" : 7.7574196,<br>
+										"description" : "score(freq=1.0), computed as boost * idf * tf from:",<br>
+										"details" : [<br>
+										{<br>
+										"value" : 2.2,<br>
+										"description" : "boost",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 7.5453897,<br>
+										"description" : "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",<br>
+										"details" : [<br>
+										{<br>
+										"value" : 4,<br>
+										"description" : "n, number of documents containing term",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 8513,<br>
+										"description" : "N, total number of documents with field",<br>
+										"details" : [ ]<br>
+										}<br>
+										]<br>
+										},<br>
+										{<br>
+										"value" : 0.46731842,<br>
+										"description" : "tf, computed as freq / (freq + k1 * (1 - b + b * dl / avgdl))
+										from:",<br>
+										"details" : [<br>
+										{<br>
+										"value" : 1.0,<br>
+										"description" : "freq, occurrences of term within document",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 1.2,<br>
+										"description" : "k1, term saturation parameter",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 0.75,<br>
+										"description" : "b, length normalization parameter",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 2.0,<br>
+										"description" : "dl, length of field",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 2.1431928,<br>
+										"description" : "avgdl, average length of field",<br>
+										"details" : [ ]<br>
+										}<br>
+										]<br>
+										}<br>
+										]<br>
+										}<br>
+										]<br>
+										}<br>
+										]<br>
+										},<br>
+										{<br>
+										"value" : 4.1082706,<br>
+										"description" : "max of:",<br>
+										"details" : [<br>
+										{<br>
+										"value" : 4.1082706,<br>
+										"description" : "weight(overview:hero in 1190) [PerFieldSimilarity], result
+										of:",<br>
+										"details" : [<br>
+										{<br>
+										"value" : 4.1082706,<br>
+										"description" : "score(freq=1.0), computed as boost * idf * tf from:",<br>
+										"details" : [<br>
+										{<br>
+										"value" : 2.2,<br>
+										"description" : "boost",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 4.1554832,<br>
+										"description" : "idf, computed as log(1 + (N - n + 0.5) / (n + 0.5)) from:",<br>
+										"details" : [<br>
+										{<br>
+										"value" : 133,<br>
+										"description" : "n, number of documents containing term",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 8514,<br>
+										"description" : "N, total number of documents with field",<br>
+										"details" : [ ]<br>
+										}<br>
+										]<br>
+										},<br>
+										{<br>
+										"value" : 0.4493811,<br>
+										"description" : "tf, computed as freq / (freq + k1 * (1 - b + b * dl / avgdl))
+										from:",<br>
+										"details" : [<br>
+										{<br>
+										"value" : 1.0,<br>
+										"description" : "freq, occurrences of term within document",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 1.2,<br>
+										"description" : "k1, term saturation parameter",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 0.75,<br>
+										"description" : "b, length normalization parameter",<br>
+										"details" : [ ]<br>
+										},<br>
+										{<br>
+										"value" : 36.0,<br>
+										"description" : "dl, length of field",
+										"details" : [ ]<br>
+										}<br>,
+										{<br>
+										"value" : 35.016327,<br>
+										"description" : "avgdl, average length of field",<br>
+										"details" : [ ]<br>
+										}<br>
+										]<br>
+										}<br>
+										]<br>
+										}<br>
+										]<br>
+										}<br>
+										]<br>
+										}<br>
+										]<br>
+										}<br>
+										}<br>
+									</code>
+								</details><br>
+								In the _explain response of cross_fields, we can see that scoring is still done by field
+								per term before it is rolled up by term. In the combined_field this doesn’t happen
+								because each term is scored just once on the synthetic field representing a combination
+								of “title”, “tagline” and “overview”. The single per-term scoring against the synthetic
+								field homogenizes the term statistics that may have varied drastically between fields
+								with cross_fields.
+							</p>
+							<h3>First page of results</h3>
+							<p class="card-text">
+								Next, I compare the first page of results (size: 30) as tables. I added the Jaccard set
+								similarity to show how much overlap there is between the two result sets. A Jaccard
+								similarity of 1.0 is perfect overlap, the same 30 items in both result sets. A Jaccard
+								similarity of 0.0 is no overlap, so 60 different items between the two queries. Remember
+								Jaccard similarity is set based and does not factor in position.
+							</p>
+							<h3>Jaccard similarity: 0.579</h3>
+							<table class="gt_table">
+								<thead class="gt_header">
+									<tr>
+										<th class="gt_heading gt_title gt_font_normal gt_bottom_border" colspan="2">
+											Jaccard similarity: 0.579</th>
+									</tr>
+								</thead>
+								<tbody class="gt_table_body">
+									<tr>
+										<td class="gt_row gt_center">
+											<div class="gt_from_md">
+												<table
+													style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #ffffff; width: auto; border-width: 2px; border-color: #A8A8A8 #D3D3D3 #A8A8A8 #D3D3D3; border-style: solid none solid none;">
+													<thead
+														style="border-width: 2px 1px 2px 1px; border-color: #D3D3D3; border-style: solid none solid none;">
+														<tr>
+															<th
+																style="color: #333333; background-color: #ffffff; font-size: 100%; font-weight: normal; text-transform: inherit; text-align: center; padding: 0 4px 0 4px;"
+																colspan="2" rowspan="1"><span
+																	style="border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; overflow-x: hidden; display: inline-block; width: 100%;">combined_fields</span>
+															</th>
+															<th
+																style="color: #333333; background-color: #ffffff; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 5px 5px 6px 5px;"
+																colspan="1" rowspan="2">rank</th>
+														</tr>
+														<tr>
+															<th
+																style="color: #333333; background-color: #ffffff; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 5px 5px 6px 5px;"
+																colspan="1" rowspan="1">score</th>
+															<th
+																style="color: #333333; background-color: #ffffff; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; overflow-x: hidden; text-align: left; padding: 5px 5px 6px 5px;"
+																colspan="1" rowspan="1">title</th>
+														</tr>
+													</thead>
+													<tbody
+														style="border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3;">
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																20.483114</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Captain Marvel</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #000000; color: #ffffff; padding: 8px 5px 8px 5px;">
+																1</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																16.441910</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Green Lantern: First Flight</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #0e0e0e; color: #ffffff; padding: 8px 5px 8px 5px;">
+																2</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																15.406511</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Jimmy Vestvood: Amerikan Hero</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #181818; color: #ffffff; padding: 8px 5px 8px 5px;">
+																3</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																13.150019</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Hulk</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #202020; color: #ffffff; padding: 8px 5px 8px 5px;">
+																4</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																12.759342</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																The Man Who Killed Don Quixote</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #292929; color: #ffffff; padding: 8px 5px 8px 5px;">
+																5</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																12.038399</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Justice League: War</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #353535; color: #ffffff; padding: 8px 5px 8px 5px;">
+																6</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																10.916338</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Maverick</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #424242; color: #ffffff; padding: 8px 5px 8px 5px;">
+																7</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																10.763498</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																The Extra Man</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #4f4f4f; color: #ffffff; padding: 8px 5px 8px 5px;">
+																8</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																10.158279</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Green Lantern: Emerald Knights</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #595959; color: #ffffff; padding: 8px 5px 8px 5px;">
+																9</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																10.123980</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Rambo</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #626262; color: #ffffff; padding: 8px 5px 8px 5px;">
+																10</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																9.909670</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																The Odd Life of Timothy Green</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #6b6b6b; color: #ffffff; padding: 8px 5px 8px 5px;">
+																11</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																9.797913</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																The Green Inferno</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #747474; color: #ffffff; padding: 8px 5px 8px 5px;">
+																12</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																9.777215</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Green Lantern</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #7e7e7e; color: #000000; padding: 8px 5px 8px 5px;">
+																13</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																9.688647</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																The Green Berets</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #878787; color: #000000; padding: 8px 5px 8px 5px;">
+																14</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																9.402530</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Revenge of the Green Dragons</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #919191; color: #000000; padding: 8px 5px 8px 5px;">
+																15</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																9.362038</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																The Punisher</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #9b9b9b; color: #000000; padding: 8px 5px 8px 5px;">
+																16</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																9.341401</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Green Book</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #a6a6a6; color: #000000; padding: 8px 5px 8px 5px;">
+																17</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																9.081026</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Green Street Hooligans 2</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #b1b1b1; color: #000000; padding: 8px 5px 8px 5px;">
+																18</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																8.764002</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Blinky Bill the Movie</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #bcbcbc; color: #000000; padding: 8px 5px 8px 5px;">
+																19</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																8.744556</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Chain Reaction</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #c4c4c4; color: #000000; padding: 8px 5px 8px 5px;">
+																20</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																8.648538</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Green Room</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #cbcbcb; color: #000000; padding: 8px 5px 8px 5px;">
+																21</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																8.553925</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																How Green Was My Valley</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #d3d3d3; color: #000000; padding: 8px 5px 8px 5px;">
+																22</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																8.370777</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Fried Green Tomatoes</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #dbdbdb; color: #000000; padding: 8px 5px 8px 5px;">
+																23</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																8.282112</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Green Mansions</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #e1e1e1; color: #000000; padding: 8px 5px 8px 5px;">
+																24</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																8.211758</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Big Trouble in Little China</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #e7e7e7; color: #000000; padding: 8px 5px 8px 5px;">
+																25</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																8.195307</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																The Green Mile</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #eeeeee; color: #000000; padding: 8px 5px 8px 5px;">
+																26</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																8.099191</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Hardball</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #f3f3f3; color: #000000; padding: 8px 5px 8px 5px;">
+																27</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																7.975277</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Taxi</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #f7f7f7; color: #000000; padding: 8px 5px 8px 5px;">
+																28</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																7.816612</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Last Action Hero</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #fbfbfb; color: #000000; padding: 8px 5px 8px 5px;">
+																29</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																7.787214</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Green Zone</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; background-color: #ffffff; color: #000000; padding: 8px 5px 8px 5px;">
+																30</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</td>
+										<td class="gt_row gt_center">
+											<div class="gt_from_md">
+												<table
+													style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #ffffff; width: auto; border-width: 2px; border-color: #A8A8A8 #D3D3D3 #A8A8A8 #D3D3D3; border-style: solid none solid none;">
+													<thead
+														style="border-width: 2px 1px 2px 1px; border-color: #D3D3D3; border-style: solid none solid none;">
+														<tr>
+															<th
+																style="color: #333333; background-color: #ffffff; font-size: 100%; font-weight: normal; text-transform: inherit; text-align: center; padding: 0 4px 0 4px;"
+																colspan="2" rowspan="1"><span
+																	style="border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; overflow-x: hidden; display: inline-block; width: 100%;">cross_fields</span>
+															</th>
+														</tr>
+														<tr>
+															<th
+																style="color: #333333; background-color: #ffffff; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; overflow-x: hidden; text-align: left; padding: 5px 5px 6px 5px;"
+																colspan="1" rowspan="1">title</th>
+															<th
+																style="color: #333333; background-color: #ffffff; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 5px 5px 6px 5px;"
+																colspan="1" rowspan="1">score</th>
+														</tr>
+													</thead>
+													<tbody
+														style="border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3;">
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Captain Marvel</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																31.48880</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Jimmy Vestvood: Amerikan Hero</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																21.73690</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Green Lantern: First Flight</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																18.18846</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Hulk</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																17.29990</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Green Mansions</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																16.13631</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																The Green Berets</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																16.13631</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Green Zone</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																16.13631</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																The Green Hornet</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																16.13631</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Green Room</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																16.13631</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Green Lantern</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																16.13631</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																The Green Mile</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																16.13631</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Green Book</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																16.13631</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																The Green Inferno</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																16.13631</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Heroes</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																15.88856</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Hero</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																15.88856</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Green Lantern: Emerald Knights</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																15.71288</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Justice League: War</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																15.45730</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Maverick</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																15.06839</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Chain Reaction</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																14.37306</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Blinky Bill the Movie</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																13.89266</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																The Extra Man</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																13.58447</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																The Punisher</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																13.53983</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Revenge of the Green Dragons</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																13.48916</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Fried Green Tomatoes</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																13.48916</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																The Odd Life of Timothy Green</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																13.11556</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Hero Wanted</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																12.77054</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Heroes for Sale</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																12.77054</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Almost Heroes</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																12.77054</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Everyone’s Hero</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																12.77054</td>
+														</tr>
+														<tr>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left; padding: 8px 5px 8px 5px;">
+																Kelly’s Heroes</td>
+															<td
+																style="margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums; padding: 8px 5px 8px 5px;">
+																12.77054</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="card-text">
+								The Jaccard similarity of 0.579 highlights that a lot of different documents are being surfaced in the combined_fields query compared to cross_fields. In this example 34 results are shared between the queries, but 26 are unique to one of the other. This doesn’t mean the differences are bad (or good) but it does mean there is some major churn in rankings between the two queries.<br><br>
+								Another view of that same data, with a scatter plot, better shows the changes in position and scores for individual movies. The x-axis is the score from the cross_fields query and the y-axis is the score from the combined_fields query. Each dot is a document and the dot color represents the positional shift switching from cross_fields to combined_fields. Some documents were not included in the results for both queries, so they are represented as a tick mark along the axis where they were retrieved.
+							</p>
+							<img src="/assets/img/Rplot-2.png" alt="">
+							<p class="card-text">
+								The top several results are consistent and the golden result “Hulk” is returned in position #4 for both queries. Note the score plateau in cross_fields at a score of 16.13. All of those documents got identical scores, so their relative position in the final ranked list is decided by the order they were indexed. This arbitrary tie-breaking doesn’t happen in combined_fields because there isn’t the same plateau effect with a single large field.<br><br>
+								Visualizing search data like this is a great way to glean insights you might miss in bigger tables. Tables are great for inspecting individual records or comparing a handful of items, but graphics are a better form of communication when many data points are involved. Search is a “medium” data problem, with lots of queries and lots of results, so getting a good graphic grip on how it is performing will always help
+							</p>
+							<h3>To the future with term-centric scoring</h3>
+							<p class="card-text">
+								If you were using cross_fields, switching to combined_fields will shake up your results. But the benefits (general acceptance and scoring interpretability) of BM25F might make it worth it.<br><br>
+
+								Besides differences in scoring, introducing combined_fields clarifies the split between term and field-centric in the Elasticsearch API. Now we have multi_match for field-centric and combined_fields for term-centric. Having a clear API is big reason why I think Elasticsearch has been so successful, so I’m really happy to see this trend continue.<br><br>
+
+								I’m also pleased to see the effort Elastic is committing to keeping Elasticsearch (and Lucene) current with the best methods from academic publications. HNSW approximate nearest neighbor search – vector search- is right around the corner for Lucene and Elastic is active in that effort too.<br><br>
+
+								Do join us in Relevance Slack and let me know your comments or feedback – and if we can help you with these tricky scoring issues on your Elasticsearch cluster, get in touch.
+							</p>
+							<h3></h3>
+							<p class="card-text"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-lg-3">
+					<h3> Related articles </h3>
+				</div>
+				<div class="col-md-9 col-lg-9">
+					<div class="owl-carousel owl-theme blog-carousel">
+						<div class="carditem">
+							<div class="card">
+								<img class="card-img-top" src="assets/img/blg1.webp" alt="What are Apache Solr and its advantages">
+								<div class="card-body">
+									<small><em>September 27, 2021</em></small>
+									<h5 class="card-title">What are Apache Solr and its advantages?</h5><br><br>
+									<a href="blog/what-are-apache-solr-and-its-advantages" class="btn btn-primary" target="_self">Learn
+										more</a>
+								</div>
+							</div>
+						</div>
+						<div class="carditem">
+							<div class="card">
+								<img class="card-img-top" src="assets/img/blg2.webp"
+									alt="Elastic Search Important Features a Business Should Know About">
+								<div class="card-body">
+									<small><em>August 28, 2021</em></small>
+									<h5 class="card-title">Elastic Search Important Features a Business Should Know
+										About</h5>
+									<a href="blog/elastic-search-important-features-a-business-should-know-about" class="btn btn-primary"
+										target="_self">Learn more</a>
+								</div>
+							</div>
+						</div>
+						<div class="carditem">
+							<div class="card">
+								<img class="card-img-top" src="assets/img/blg3.webp" alt="Solr Performance: The way you can use logs">
+								<div class="card-body">
+									<small><em>July 11, 2021</em></small>
+									<h5 class="card-title">Solr Performance: The way you can use logs and…</h5><br>
+									<a href="blog/solr-performance" class="btn btn-primary" target="_self">Learn
+										more</a>
+								</div>
+							</div>
+						</div>
+						<div class="carditem">
+							<div class="card">
+								<img class="card-img-top" src="assets/img/blg4.webp"
+									alt="Salesforce communities- Everything you need to know">
+								<div class="card-body">
+									<small><em>June 20, 2021</em></small>
+									<h5 class="card-title">Salesforce communities- Everything you need to know</h5>
+									<a href="blog/salesforce-communities" class="btn btn-primary" target="_self">Learn
+										more</a>
+								</div>
+							</div>
+						</div>
+						<div class="carditem">
+							<div class="card">
+								<img class="card-img-top" src="assets/img/blg5.webp"
+									alt="Elasticsearch Monitoring Tools a handy guide of Open Source">
+								<div class="card-body">
+									<small><em>May 10, 2021</em></small>
+									<h5 class="card-title">Elasticsearch Monitoring Tools a handy guide of Open Source…
+									</h5>
+									<a href="blog/elasticsearch-monitoring-tools" class="btn btn-primary" target="_self">Learn more</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+
+	<!-- Footer start -->
+	<footer>
+		<div class="container">
+			<div class="row" data-aos="fade-up" data-aos-duration="700">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-4 pr-5">
+							<h3 class="contactTitle">
+								Contact Us
+							</h3>
+							<div class="contactDetail">
+								51 E campbell Ave. #400A,<br>
+								Campbell, CA, 95008<br><br>
+								<img src="assets/img/phone.png" alt="Phone" width="24" />&nbsp;&nbsp; +14084090256 <br>
+								<img src="assets/img/email.png" alt="Email" width="24" />&nbsp;&nbsp;
+								info@nextbrickinc.com
+							</div>
+							<a class="contactBtn" href="contact-us">Contact Us</a>
+							<!-- <h3>Follow us</h3>
+                            <ul class="socialLinks">
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/insta.png" alt="Insta" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/linkedIn.png" alt="linkedin" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/fb.png" alt="fb" />
+                                    </a>
+                                </li>
+                            </ul> -->
+						</div>
+						<div class="col-md-2">
+							<ul class="list">
+								<li>
+									<a href="./">Home</a>
+								</li>
+								<li>
+									<a href="about">About</a>
+								</li>
+								<li>
+									<a href="customers">Customers</a>
+								</li>
+								<li>
+									<a href="partners">Partners</a>
+								</li>
+								<li>
+									<a href="blog/">Blog</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h3>Services</h3>
+							<ul class="list">
+								<li>
+									<a href="content-management">Content Management</a>
+								</li>
+								<li>
+									<a href="search">Search</a>
+								</li>
+								<li>
+									<a href="bigdata">Bigdata</a>
+								</li>
+								<li>
+									<a href="cloud">Cloud</a>
+								</li>
+								<li>
+									<a href="offshore-development">Offshore Development</a>
+								</li>
+								<li>
+									<a href="emerging-technologies">Emerging Technologies</a>
+								</li>
+								<li>
+									<a href="application-development">Application Development</a>
+								</li>
+								<li>
+									<a href="software-product-development">Software Product Development</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-0">
+						</div>
+						<div class="col-md-3 terms mr-0 pr-0">
+							<ul class="list">
+								<li>
+									<a href="terms">Terms of Use</a> <span style="color:#fff;">|</span> <a href="privacy-policy">Privacy
+										Policy</a>
+								</li>
+								<li>
+									&nbsp;
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	<!-- Footer End -->
+
+	<script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+	<script type="text/javascript" src="./assets/js/slider.js"></script>
+	<script type="text/javascript" src="./assets/js/app.js"></script>
+	<script type="text/javascript" src="./assets/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="./assets/js/aos.js"></script>
+	<script type="text/javascript" src="./assets/js/contact.js"></script>
+
+</body>
+
+</html>
